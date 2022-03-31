@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Attendence Taking App</string>
+    <string name="login">Login</string>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="linear_margin">28dp</dimen>
+    <dimen name="txtLogin">38dp</dimen>
+    <dimen name="txtRegister">16dp</dimen>
+</resources>

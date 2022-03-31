@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="64dp"
+            android:textColor="@color/black"
+            android:textSize="38dp"
+            android:textStyle="bold"></TextView>
+
+        <EditText
+            android:id="@+id/uidEditText"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:hint="UID"></EditText>
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:height="48dp"
+            android:hint="Password"></EditText>
+
+
+        
+        <RadioGroup
+            android:layout_marginTop="16dp"
+            android:id="@+id/radioGrooup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+                <RadioButton
+                    android:id="@+id/admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Admin"
+                    android:checked="true"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/faculty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Faculty"></RadioButton>
+
+
+
+        </RadioGroup>
+
+        
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLogin"
+            android:text="@string/login"
+            android:layout_marginTop="16dp">
+        </com.google.android.material.button.MaterialButton>
+        
+    </LinearLayout>
+
+
+    
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="100dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:layout_editor_absoluteX="0dp">
+    
+    
+            <TextView
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/linear_margin"
+                android:layout_marginBottom="30dp"
+                android:text="@string/login"
+                android:textSize="38dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.75"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.681"></TextView>
+    
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login"
+                android:layout_marginHorizontal="@dimen/linear_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+    
+    
+    &lt;!&ndash;            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputUid"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="UID"
+                    android:layout_marginBottom="16dp">&ndash;&gt;
+    
+                <EditText
+                    android:id="@+id/uidEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:height="48dp"
+                    android:hint="UID"
+                    android:inputType="text"
+                    android:minHeight="48dp"></EditText>
+    
+    &lt;!&ndash;            </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;
+    
+    
+    
+    
+    &lt;!&ndash;            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputPassword"
+                    app:passwordToggleEnabled="true"
+                    app:endIconTint="@color/primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtInputUid"
+                    android:hint="Password"
+                    android:layout_marginBottom="16dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">&ndash;&gt;
+    
+                <EditText
+                    android:id="@+id/passwordEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/uidEditText"
+                    android:layout_marginTop="16dp"
+                    android:height="48dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"></EditText>
+    &lt;!&ndash;            </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;
+    
+    
+    &lt;!&ndash;            <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/txtInputUsertype"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtInputPassword">&ndash;&gt;
+    
+                
+    &lt;!&ndash;            </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;
+    
+    
+    
+    
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinner"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/login"></com.google.android.material.button.MaterialButton>
+    
+    
+            </RelativeLayout>
+    
+    &lt;!&ndash;                <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/progressbar_background"
+                        android:padding="8dp">
+    
+                        <ProgressBar
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerInParent="true"
+                            android:progressTint="@color/primaryDark"></ProgressBar>
+    
+                    </RelativeLayout>&ndash;&gt;
+    
+    
+        </RelativeLayout>-->
